@@ -1,21 +1,9 @@
-#
-# spec file for package spec (Version 2.0)
-#
-# Copyright (c) 2003 SuSE Linux AG, Nuernberg, Germany.
-# This file and all modifications and additions to the pristine
-# package are under the same license as the package itself.
-#
-# Please submit bugfixes or comments via http://www.suse.de/feedback/
-#
-
-# norootforbuild
-
 Name:         kegs
 License:      COPYRIGHT
 Group:        Emulators
 Autoreqprov:  on
 Version:      0.91
-Release:      %mkrel 1
+Release:      %mkrel 0.1
 Summary:      Apple IIgs emulator
 Source:       %name.%version.tar.gz
 Patch0:       %name.%version.dif
