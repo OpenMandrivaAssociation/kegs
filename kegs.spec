@@ -3,7 +3,7 @@ License:      COPYRIGHT
 Group:        Emulators
 Autoreqprov:  on
 Version:      0.91
-Release:      %mkrel 0.1
+Release:      %mkrel 2
 Summary:      Apple IIgs emulator
 Source:       %name.%version.tar.gz
 Patch0:       %name.%version.dif
@@ -52,17 +52,10 @@ make %{?jobs:-j%jobs}
 install -D -m 755 xkegs $RPM_BUILD_ROOT/%{_bindir}/xkegs
 install -D -m 644 config.kegs $RPM_BUILD_ROOT/%{_sysconfdir}/default.config.kegs
 install -d -m 755 $RPM_BUILD_ROOT%{_bindir}
-cat <<EOT >$RPM_BUILD_ROOT%{_bindir}/xkegs
-
-#!/bin/sh
-
-exec %{_bindir}/xkegs "\$@"
-EOT
-chmod 755 $RPM_BUILD_ROOT%{_bindir}/xkegs
 
 %files
 %defattr(-,root,root)
-%doc *.txt
-# %{_libdir}/kegs
+%{_docdir}/%{name}/*.txt
+%{_bindir}/kegs
 %{_bindir}/xkegs
 %{_sysconfdir}/default.config.kegs
