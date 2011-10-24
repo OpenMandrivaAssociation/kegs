@@ -55,8 +55,8 @@ chmod 755 $RPM_BUILD_ROOT%{_bindir}/xkegs
 
 %files
 %defattr(-,root,root)
-%{_docdir}/%{name}/*.txt
-%{_bindir}/kegs
+# %{_docdir}/%{name}/*.txt
+# %{_bindir}/kegs
 %{_bindir}/xkegs
 %{_datadir}/%{name}/config.kegs
-%{_sysconfdir}/default.config.kegs
+# %{_sysconfdir}/default.config.kegs
