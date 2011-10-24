@@ -55,7 +55,7 @@ install -d -m 755 $RPM_BUILD_ROOT%{_bindir}
 
 %files
 %defattr(-,root,root)
-%{_docdir}/%{name}/*.txt
+# %{_docdir}/%{name}/*.txt
 %{_bindir}/kegs
 %{_bindir}/xkegs
 %{_sysconfdir}/default.config.kegs
