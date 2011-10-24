@@ -3,7 +3,7 @@ License:      COPYRIGHT
 Group:        Emulators
 Autoreqprov:  on
 Version:      0.91
-Release:      %mkrel 0.1
+Release:      %mkrel 0.2
 Summary:      Apple IIgs emulator
 Source:       %name.%version.tar.gz
 Patch0:       %name.%version.dif
