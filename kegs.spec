@@ -1,5 +1,5 @@
 Name:         kegs
-License:      COPYRIGHT
+License:      GPLv2
 Group:        Emulators
 Autoreqprov:  on
 Version:      0.91
