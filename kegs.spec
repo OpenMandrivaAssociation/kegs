@@ -9,6 +9,7 @@ URL:          http://kegs.sourceforge.net/
 Source:       http://kegs.sourceforge.net/%name.%version.tar.gz
 Patch0:       %name.%version.dif
 Patch1:       kegs-0.91-joystickpath.patch
+Patch2:       kegs-0.91-crosscompile.patch
 BuildRequires: X11-devel
 
 %description
@@ -18,6 +19,7 @@ Requires ROM and disk images to work.
 %setup -q -n %name.%version
 %patch0 -p0
 %patch1 -p1 -b .jspath~
+%patch2 -p1 -b .cross~
 
 %build
 # build section
@@ -40,13 +42,13 @@ LD = \$(CC)
 EXTRA_LIBS = -lXext
 EXTRA_SPECIALS =
 
-AS = cc
+AS = \$(CC)
 PERL = perl
 
 XOPTS =
 EOT
 
-make %{?jobs:-j%jobs}
+make %{?jobs:-j%jobs} CC=%__cc
 
 
 %install
