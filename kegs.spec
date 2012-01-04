@@ -3,12 +3,12 @@ License:      COPYRIGHT
 Group:        Emulators
 Autoreqprov:  on
 Version:      0.91
-Release:      %mkrel 0.2
+Release:      %mkrel 0.3
 Summary:      Apple IIgs emulator
-Source:       %name.%version.tar.gz
+URL:          http://kegs.sourceforge.net/
+Source:       http://kegs.sourceforge.net/%name.%version.tar.gz
 Patch0:       %name.%version.dif
 BuildRequires: X11-devel
-BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 
 %description
 Requires ROM and disk images to work.
