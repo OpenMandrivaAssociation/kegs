@@ -8,6 +8,7 @@ Summary:      Apple IIgs emulator
 URL:          http://kegs.sourceforge.net/
 Source:       http://kegs.sourceforge.net/%name.%version.tar.gz
 Patch0:       %name.%version.dif
+Patch1:       kegs-0.91-joystickpath.patch
 BuildRequires: X11-devel
 
 %description
@@ -16,6 +17,7 @@ Requires ROM and disk images to work.
 %prep
 %setup -q -n %name.%version
 %patch0 -p0
+%patch1 -p1 -b .jspath~
 
 %build
 # build section
