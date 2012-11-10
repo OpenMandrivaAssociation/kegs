@@ -1,0 +1,15 @@
+--- kegs.0.91/src/Makefile.ark	2012-01-04 18:50:28.628073038 +0100
++++ kegs.0.91/src/Makefile	2012-01-04 18:50:41.321914344 +0100
+@@ -89,10 +89,10 @@ engine_s.o: 8inst_s.h 16inst_s.h 8size_s
+ 	$(CC) $(CCOPTS) $(XOPTS) -c $(OPTS) -I. $*.c
+ 
+ partls: partls.c
+-	cc $(CCOPTS) $(XOPTS) $(OPTS) -o partls partls.c
++	$(CC) $(CCOPTS) $(XOPTS) $(OPTS) -o partls partls.c
+ 
+ to_pro: prodos.h prodos_protos.h to_pro.c
+-	cc $(CCOPTS) $(XOPTS) $(OPTS) -o to_pro to_pro.c
++	$(CC) $(CCOPTS) $(XOPTS) $(OPTS) -o to_pro to_pro.c
+ 
+ 
+ compile_time.o: $(OBJECTS)

@@ -1,0 +1,11 @@
+--- src/sim65816.c
++++ src/sim65816.c	2007/08/16 13:47:09
+@@ -22,7 +22,7 @@
+ char g_argv0_path[256] = "./";
+ 
+ const char *g_kegs_default_paths[] = { "", "./", "${HOME}/",
+-	"${HOME}/Library/KEGS/",
++	"${HOME}/Library/KEGS/", "/etc/",
+ 	"${0}/Contents/Resources/", "/usr/local/lib/",
+ 	"/usr/local/kegs/", "/usr/local/lib/kegs/", "/usr/share/kegs/",
+ 	"/var/lib/", "/usr/lib/kegs/", "${0}/", 0 };
