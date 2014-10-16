@@ -3,7 +3,7 @@ License:      GPLv2
 Group:        Emulators
 Autoreqprov:  on
 Version:      0.91
-Release:      %mkrel 0.3
+Release:      0.4
 Summary:      Apple IIgs emulator
 URL:          http://kegs.sourceforge.net/
 Source:       http://kegs.sourceforge.net/%name.%version.tar.gz
