@@ -5,7 +5,7 @@ Autoreqprov:  on
 Version:      0.91
 Release:      0.5
 Summary:      Apple IIgs emulator
-URL:          http://kegs.sourceforge.net/
+URL:          https://kegs.sourceforge.net/
 Source:       http://kegs.sourceforge.net/%name.%version.tar.gz
 Patch0:       %name.%version.dif
 Patch1:       kegs-0.91-joystickpath.patch
